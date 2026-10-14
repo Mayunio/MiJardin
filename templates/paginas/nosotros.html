@@ -1,0 +1,42 @@
+
+
+{% extends 'base.html' %} <!--Esta página va a utilizar la estructura que está definida en base.html.-->
+
+{% block titulo %}Inicio - MiJardin{% endblock %}
+
+{% block contenido %}
+
+<div class="container-fluid">
+
+    <div class="p-5 mb-4 bg-success text-white rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-4 fw-bold">
+                Bienvenido a MiJardin
+            </h1>
+
+            <h1>Sobre MiJardin</h1>
+<p>MiJardin es un catálogo informativo de plantas medicinales.</p>
+<p>El proyecto MiJardin nace como respuesta a la necesidad de contar con una plataforma web que permita a las personas buscar y consultar información sobre plantas medicinales de manera organizada y sencilla.
+
+La problemática que planteamos era que la información sobre plantas medicinales suele encontrarse dispersa en diferentes sitios, redes sociales o fuentes que no siempre presentan la información de manera estructurada.
+A si que MiJardin busca centralizar información como: <p>
+
+<p>  Nombre común de la planta o nombre científico<p>
+  <p>  Propiedades<p>
+    <p>  Imagen de la planta<p>
+
+            
+
+            <a href="{% url 'plantas' %}" class="btn btn-light btn-lg">  <!--Busca la URL que tiene el nombre plantas y genera automáticamente su dirección-->
+                Ver catálogo
+            </a>
+
+
+
+            <p>La plataforma no entrega diagnósticos ni reemplaza la atención médica.</p> 
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}

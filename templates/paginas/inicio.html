@@ -1,0 +1,32 @@
+{% extends 'base.html' %} <!--Esta página va a utilizar la estructura que está definida en base.html.-->
+
+{% block titulo %}Inicio - MiJardin{% endblock %}
+
+{% block contenido %}
+
+<div class="container-fluid">
+
+    <div class="p-5 mb-4 bg-success text-white rounded-3">
+        <div class="container-fluid py-5">
+            <h1 class="display-4 fw-bold">
+                Bienvenido a MiJardin
+            </h1>
+
+            <p class="fs-4">
+                Catálogo de plantas medicinales
+            </p>
+
+            <p>
+                Conoce diferentes plantas, sus características,
+                usos tradicionales y recomendaciones.
+            </p>
+
+            <a href="{% url 'plantas' %}" class="btn btn-light btn-lg">  <!--Busca la URL que tiene el nombre plantas y genera automáticamente su dirección-->
+                Ver catálogo
+            </a>
+        </div>
+    </div>
+
+</div>
+
+{% endblock %}
